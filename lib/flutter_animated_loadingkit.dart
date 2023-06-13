@@ -1,7 +1,6 @@
 library flutter_animated_loadingkit;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/sideway_surge.dart';
+export 'src/circle_surge.dart';
+export 'src/dual_surge.dart';
+export 'src/face_surge.dart';

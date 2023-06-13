@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AnimatedLoadingSideWaySurge extends StatefulWidget {
-  final double initWidth;
-  final double initHeight;
+  final double loaderWidth;
+  final double loaderHeight;
   final double expandWidth;
   final Color borderColor;
   final double borderWidth;
@@ -11,8 +11,8 @@ class AnimatedLoadingSideWaySurge extends StatefulWidget {
 
   const AnimatedLoadingSideWaySurge({
     Key? key,
-    this.initWidth = 30.0,
-    this.initHeight = 30.0,
+    this.loaderWidth = 30.0,
+    this.loaderHeight = 30.0,
     this.expandWidth = 70.0,
     this.borderColor = Colors.black,
     this.borderWidth = 10,
@@ -33,36 +33,32 @@ class _AnimatedLoadingSideWaySurgeState extends State<AnimatedLoadingSideWaySurg
   @override
   void initState() {
     super.initState();
-    width = widget.initWidth;
-    height = widget.initHeight;
+    width = widget.loaderWidth;
+    height = widget.loaderHeight;
 
     WidgetsBinding.instance.addPostFrameCallback((_) => _animateLoader());
   }
 
   void _animateLoader() async {
     while (_animating) {
-      // expand to the right
       setState(() {
         width = widget.expandWidth;
       });
       await Future.delayed(widget.speed);
 
-      // Then, contract from the left
       setState(() {
-        width = widget.initWidth;
+        width = widget.loaderWidth;
         alignment = Alignment.centerRight;
       });
       await Future.delayed(widget.speed);
 
-      // expand to the left
       setState(() {
         width = widget.expandWidth;
       });
       await Future.delayed(widget.speed);
 
-      // contract from the right
       setState(() {
-        width = widget.initWidth;
+        width = widget.loaderWidth;
         alignment = Alignment.centerLeft;
       });
 

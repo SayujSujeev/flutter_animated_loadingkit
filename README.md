@@ -2,6 +2,19 @@
 
 A collection of custom loading indicators animated with flutter.
 
+##  Installing
+
+```yaml
+dependencies:
+  flutter_animated_loadingkit: ^0.0.4
+```
+
+##  Import
+
+```dart
+import 'package:flutter_animated_loadingkit/flutter_animated_loadingkit.dart';
+```
+
 ##  How To Use
 
 ```dart
@@ -17,17 +30,22 @@ const loader = AnimatedLoadingSideWaySurge(
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/master/assets/loader1.gif" width="100px" height="100px">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/sideway_surge.gif" width="100px" height="100px">
       <br />
       Side-Way Surge
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/loader1.gif" width="100px" height="100px">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/circle_surge.gif" width="100px" height="100px">
       <br />
       Side-Way Surge
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/blob/main/assets/loader1.gif" width="100px" height="100px">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/dual_surge.gif" width="100px" height="100px">
+      <br />
+      Side-Way Surge
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/face_surge.gif" width="100px" height="100px">
       <br />
       Side-Way Surge
     </td>
