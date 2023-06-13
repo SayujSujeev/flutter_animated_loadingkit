@@ -17,12 +17,12 @@ const loader = AnimatedLoadingSideWaySurge(
 <table>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/blob/main/assets/loader1.gif" width="100px" height="100px">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/master/assets/loader1.gif" width="100px" height="100px">
       <br />
       Side-Way Surge
     </td>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/blob/main/assets/loader1.gif" width="100px" height="100px">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/loader1.gif" width="100px" height="100px">
       <br />
       Side-Way Surge
     </td>
