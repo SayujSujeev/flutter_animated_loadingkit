@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DualSurge extends StatefulWidget {
+class AnimatedLoadingDualSurge extends StatefulWidget {
   final double loaderWidth;
   final double loaderHeight;
   final double expandWidth;
@@ -8,7 +8,7 @@ class DualSurge extends StatefulWidget {
   final double borderWidth;
   final Duration speed;
 
-  const DualSurge({
+  const AnimatedLoadingDualSurge({
     Key? key,
     this.loaderWidth = 30.0,
     this.loaderHeight = 30.0,
@@ -19,10 +19,10 @@ class DualSurge extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<DualSurge> createState() => _DualSurgeState();
+  State<AnimatedLoadingDualSurge> createState() => _AnimatedLoadingDualSurgeState();
 }
 
-class _DualSurgeState extends State<DualSurge> {
+class _AnimatedLoadingDualSurgeState extends State<AnimatedLoadingDualSurge> {
   double? width1, height1, width2, height2;
   Alignment alignment1 = Alignment.topLeft;
   Alignment alignment2 = Alignment.bottomRight;

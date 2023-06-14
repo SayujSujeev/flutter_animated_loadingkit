@@ -6,7 +6,7 @@ A collection of custom loading indicators animated with flutter.
 
 ```yaml
 dependencies:
-  flutter_animated_loadingkit: ^0.0.4
+  flutter_animated_loadingkit: ^0.0.6
 ```
 
 ##  Import
@@ -48,6 +48,38 @@ const loader = AnimatedLoadingSideWaySurge(
       <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/face_surge.gif" width="100px" height="100px">
       <br />
       Face Surge
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/round_burst.gif" width="100px" height="100px">
+      <br />
+      Round Burst
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/floral_burst.gif" width="100px" height="100px">
+      <br />
+      Floral Burst
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/star_burst.gif" width="100px" height="100px">
+      <br />
+      Star Burst
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/waving_line.gif" width="100px" height="100px">
+      <br />
+      Waving Line
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/heart_beat.gif" width="100px" height="100px">
+      <br />
+      Heart Beat
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/infinity_spin.gif" width="100px" height="100px">
+      <br />
+      Infinity Spin
     </td>
   </tr>
 </table>

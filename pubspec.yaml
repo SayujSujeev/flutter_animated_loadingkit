@@ -1,6 +1,6 @@
 name: flutter_animated_loadingkit
 description: A collection of custom loading indicators animated with flutter.
-version: 0.0.4
+version: 0.0.6
 homepage: https://github.com/SayujSujeev/flutter_animated_loadingkit.git
 
 environment:

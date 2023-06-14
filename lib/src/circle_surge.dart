@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CircleSurge extends StatefulWidget {
+class AnimatedLoadingCircleSurge extends StatefulWidget {
   final double loaderWidth;
   final double loaderHeight;
   final double expandWidth;
@@ -9,7 +9,7 @@ class CircleSurge extends StatefulWidget {
   final double borderRadius;
   final Duration speed;
 
-  const CircleSurge({
+  const AnimatedLoadingCircleSurge({
     Key? key,
     this.loaderWidth = 30.0,
     this.loaderHeight = 30.0,
@@ -21,10 +21,10 @@ class CircleSurge extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<CircleSurge> createState() => _CircleSurgeState();
+  State<AnimatedLoadingCircleSurge> createState() => _AnimatedLoadingCircleSurgeState();
 }
 
-class _CircleSurgeState extends State<CircleSurge> {
+class _AnimatedLoadingCircleSurgeState extends State<AnimatedLoadingCircleSurge> {
   double width = 30.0;
   double height = 30.0;
   Alignment alignment = Alignment.topLeft;

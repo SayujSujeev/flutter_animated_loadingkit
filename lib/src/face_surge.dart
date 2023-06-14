@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FaceSurge extends StatefulWidget {
+class AnimatedLoadingFaceSurge extends StatefulWidget {
   final double initWidth;
   final double initHeight;
   final double expandedWidth;
@@ -10,7 +10,7 @@ class FaceSurge extends StatefulWidget {
   final double borderRadius;
   final Duration speed;
 
-  const FaceSurge({
+  const AnimatedLoadingFaceSurge({
     Key? key,
     this.initWidth = 30.0,
     this.initHeight = 30.0,
@@ -23,10 +23,10 @@ class FaceSurge extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<FaceSurge> createState() => _FaceSurgeState();
+  State<AnimatedLoadingFaceSurge> createState() => _AnimatedLoadingFaceSurgeState();
 }
 
-class _FaceSurgeState extends State<FaceSurge> {
+class _AnimatedLoadingFaceSurgeState extends State<AnimatedLoadingFaceSurge> {
   double? width1, height1, width2, height2, width3, height3;
   Alignment alignment1 = Alignment.topLeft;
   Alignment alignment2 = Alignment.topRight;
