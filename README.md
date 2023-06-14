@@ -6,7 +6,7 @@ A collection of custom loading indicators animated with flutter.
 
 ```yaml
 dependencies:
-  flutter_animated_loadingkit: ^0.0.6
+  flutter_animated_loadingkit: ^0.0.7
 ```
 
 ##  Import
@@ -80,6 +80,33 @@ const loader = AnimatedLoadingSideWaySurge(
       <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/infinity_spin.gif" width="100px" height="100px">
       <br />
       Infinity Spin
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/tango.gif" width="100px" height="100px">
+      <br />
+      Tango
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/spinner.gif" width="100px" height="100px">
+      <br />
+      Spinner
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/jumping_dots.gif" width="100px" height="100px">
+      <br />
+      Jumping Dots
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/firework.gif" width="100px" height="100px">
+      <br />
+      Firework
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/SayujSujeev/flutter_animated_loadingkit/main/assets/spiral_lines.gif" width="100px" height="100px">
+      <br />
+      Spiral Lines
     </td>
   </tr>
 </table>

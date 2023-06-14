@@ -27,3 +27,12 @@ Update readme
 - Introduced Star Burst animation
 - Introduced Waving Line animation
 - Introduced Infinity Spin animation
+
+## 0.0.7
+
+- Fix Infinity Spin animation
+- Introduced Tango animation
+- Introduced Spinner animation
+- Introduced Jumping Dots animation
+- Introduced Firework animation
+- Introduced Spiral Lines animation

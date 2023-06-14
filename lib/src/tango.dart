@@ -3,27 +3,26 @@ import 'dart:math';
 
 import 'package:flutter_animated_loadingkit/painters/infinity_painter.dart';
 
-class AnimatedLoadingInfinitySpin extends StatefulWidget {
+class AnimatedLoadingTango extends StatefulWidget {
   final Duration speed;
   final double strokeWidth;
   final Color color;
   final Size size;
 
-  const AnimatedLoadingInfinitySpin({
+  const AnimatedLoadingTango({
     Key? key,
-    this.speed = const Duration(seconds: 3),
+    this.speed = const Duration(seconds: 2),
     this.strokeWidth = 3.0,
     this.color = Colors.black,
     this.size = const Size(70, 70),
   }) : super(key: key);
 
   @override
-  State<AnimatedLoadingInfinitySpin> createState() => _AnimatedLoadingInfinitySpinState();
+  State<AnimatedLoadingTango> createState() => _AnimatedLoadingTangoState();
 }
 
-class _AnimatedLoadingInfinitySpinState extends State<AnimatedLoadingInfinitySpin> with SingleTickerProviderStateMixin {
+class _AnimatedLoadingTangoState extends State<AnimatedLoadingTango> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _animation;
 
   @override
   void initState() {
@@ -32,28 +31,15 @@ class _AnimatedLoadingInfinitySpinState extends State<AnimatedLoadingInfinitySpi
       duration: widget.speed,
       vsync: this,
     )..repeat();
-    _animation = TweenSequence([
-      TweenSequenceItem(
-        tween: Tween(begin: 0.0, end: 4 * pi)
-            .chain(CurveTween(curve: const Interval(0.0, 0.66))),
-        weight: 66,
-      ),
-      TweenSequenceItem(
-        tween: Tween(begin: 4 * pi, end: 6 * pi)
-            .chain(CurveTween(curve: const Interval(0.66, 1.0))),
-        weight: 33,
-      ),
-    ]).animate(_controller);
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: _animation,
+      animation: _controller,
       builder: (_, __) {
-        return Transform(
-          transform: Matrix4.rotationX(_animation.value),
-          alignment: Alignment.center,
+        return Transform.rotate(
+          angle: _controller.value * 5 * pi,
           child: CustomPaint(
             painter: InfinityPainter(
               strokeWidth: widget.strokeWidth,
@@ -75,3 +61,5 @@ class _AnimatedLoadingInfinitySpinState extends State<AnimatedLoadingInfinitySpi
     super.dispose();
   }
 }
+
+

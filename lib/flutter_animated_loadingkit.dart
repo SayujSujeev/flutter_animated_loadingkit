@@ -10,3 +10,7 @@ export 'src/floral_burst.dart';
 export 'src/waving_line.dart';
 export 'src/heart_beat.dart';
 export 'src/infinity_spin.dart';
+export 'src/tango.dart';
+export 'src/spinner.dart';
+export 'src/jumping_dots.dart';
+export 'src/spiral_lines.dart';
